@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <label for="">Name : </label> 
+    <input type="text" id="name" placeholder="Enter Your Name">
+    Phone : 
+    <input type="text"  id="phone" placeholder="Enter Your Number">
+    <button onclick="message()">Print</button>
+    <p id="root"></p>
+    <p id="msg"></p>
+
+    <script>
+        const student = {
+            "name" : "Dhaval Sojitra",
+             "phone" : 6351393788
+        }
+
+        // const marks = prompt("Enter Your Marks :")
+        // function check(marks)
+        // {
+        //     if(marks > 90 )
+        //     {
+        //         return "Grade : Distinct";
+        //     }
+        //     else if(marks>70){
+        //         return "Grade : First";
+        //     }
+        //     else if(marks >60){
+        //         return "Grade : Second";
+        //     }
+        //     else if(marks >50){
+        //         return "Grade : Pass";
+        //     }
+        //     else{
+        //         return "Grade : RA";
+        //     }
+        // }
+        // document.getElementById("root").innerHTML = check(marks);
+        const message = () => {
+            const nm = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            document.getElementById("msg").innerHTML = "Hello! My name is " + nm + ".My Contact Number is " + phone;
+        }
+
+        
+        //document.getElementById("msg").innerHTML = message();
+        //document.getElementById("root").innerHTML = marks>90 ? "Grade : Distinct" : marks>70 ? "Grade : First" : marks>60 ? "Grade : Second" : "Grade : RA "
+
+
+    </script>
+</body>
+</html>
