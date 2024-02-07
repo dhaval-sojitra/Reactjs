@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="root"></p>
+    <p id="root1"></p>
+    <p id="root2"></p>
+
+
+    <script>
+        // const no1=[1,2,3];
+        // const no2=[4,5,6];
+        // document.getElementById("root").innerHTML = "No1 :" +no1;
+        // document.getElementById("root1").innerHTML = "No2 :" +no2;
+
+        // const no3=[...no1,...no2];
+        // document.getElementById("root2").innerHTML = "No2 :" +no3;
+        
+        const vehicle = {
+            "brand" : "Maruti",
+            "modlename" : "Swift",
+            "color": "Black"
+        }
+        const owner ={
+            "name" : "Dhaval",
+            "city" : "Surat",
+            "phone" : 6351393788
+        }
+        
+        let ps={}
+        ps = {...ps,vehicle,owner}
+        console.log(ps)
+
+        document.getElementById("root1").innerHTML = `Owner Name : ${ps.owner.name}<br> Model :${ps.vehicle.brand}`
+
+    </script>
+</body>
+</html>
