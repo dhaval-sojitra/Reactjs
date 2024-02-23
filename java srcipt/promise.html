@@ -1,0 +1,127 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="root"></p>
+    <script>
+        function display(some)
+        {
+            document.getElementById("root").innerHTML = some;
+        }
+        let myPromise = new Promise(function(myResolve,myReject)
+        {
+            let x = 0;
+            if (x == 0)
+                myResolve("Thik hai!");
+            else
+                myReject("Not OK!!");
+        });
+        myPromise.then(
+            function(value) {display(value);},
+            function(error) {display(error);}
+        );
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="root"></p>
+    <script>
+        function display(some)
+        {
+            document.getElementById("root").innerHTML = some;
+        }
+        let mypromise  = new Promise(function(ok,notok)
+        {
+            let x=0;
+            if(x == 0)
+                ok("OKAy!")
+            else
+                notok("Noy 0K!!")
+        })
+        mypromise.then(
+            function(value) {display(value);},
+            function(error) {display(error);}
+        )
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="root"></p>
+    <script>
+        function display(some)
+        {
+            document.getElementById("root").innerHTML = some;
+        }
+        let promise = new Promise(
+            function(yes,no)
+            {
+                d = 0;
+                if(d == 1)
+                    yes("Its dhaval sojitra...")
+                else
+                    no("Not Found!")
+            })
+        promise.then(
+            function(value1) {display(value1);},
+            function(value2) {display(value2);}
+        )
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
