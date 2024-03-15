@@ -28,7 +28,9 @@ function App(props) {
     />
     <h2>{props.name}</h2>
     <p>Enrollment No : {props.enrno}</p>
-    <p>Blood Group : {props.bgroup}</p>
+    <p>Program : {props.program}</p>
+    <p>Divison : {props.div}</p>
+    <p>Roll No : {props.rollno}</p>
     <div style={{ display: "flex", width: 350 }}>
       <div style={{ backgroundColor: "red", width: "116.5px", height: 30 }} />
       <div style={{ backgroundColor: "green", width: "116.5px", height: 30 }} />
