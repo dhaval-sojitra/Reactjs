@@ -1,11 +1,15 @@
-import Component from "./componet1";
-import Usestate from "./Usestate";
+import Condition from "./Componets/condition";
+import Getdata from "./Componets/getdata";
+import Input from "./Componets/input";
+import Props from "./Componets/props";
 
 function App() {
   return (
     <>
-      <Component content="dhaval sojitra"></Component>
-      <Usestate/>
+      {/* <Props content="Hello World.." /> */}
+      {/* <Condition name=""/> */}
+      {/* <Input/> */}
+      <Getdata/>
     </>
   );
 }
