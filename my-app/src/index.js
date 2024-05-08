@@ -7,8 +7,6 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-     <App name="create react app" command="npx create-react-app app-name"/>
-     <App name="Install react" command="npm install react "/>
      <App/>
   </React.StrictMode>
 );

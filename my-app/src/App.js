@@ -1,43 +1,54 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Props from "./Components/Props";
+import Update from "./Components/Update";
+import Fetch from "./Components/Fetch";
 
-function App(props) {
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+function App() {
   return (
     <>
-      <div
-        style={{
-          backgroundColor: "black",
-          color: "white",
-          display: "flex",
-          justifyContent: "space-between",
-          margin: 5,
-          marginBottom: 0
-        }}
-      >
-        <p style={{ marginRight: "auto", marginLeft: "20px" }}>{props.name}</p>
-        <button
-          style={{
-            marginLeft: "auto",
-            marginRight: 20,
-            backgroundColor: "transparent",
-            color: "white",
-            cursor: "pointer", // Change cursor to pointer on hover
-            transition: "background-color 0.3s, color 0.3s" // Smooth transition for hover effect
-          }}
-          onMouseEnter={(e) => { e.target.style.backgroundColor = "grey"; }} // Change background color on hover
-          onMouseLeave={(e) => { e.target.style.backgroundColor = "transparent"; }} // Reset background color on mouse leave
-        >
-          Copy
-        </button>
-      </div>
-      <div
-        style={{ backgroundColor: "grey", padding: 10, margin: 5, marginTop: 0 }}
-      >
-        <p padding="10px" style={{ color: "white", marginLeft: 20 }}>
-         {props.command}
-        </p>
-      </div>
+      {/* <Props name="Dhaval Sojitra" city="Surat"/>
+      <Update/>
+      <Fetch/> */}
+      {/* <Router>
+        <h1>
+          <Link to="/">Props</Link>
+        </h1>
+        <h1>
+          <Link to="/Fetch">Fecth Data</Link>
+        </h1>
+        <h1>
+          <Link to="/Update">Update</Link>
+        </h1>
+
+        <Route path="/">
+          <Props name="Dhaval Sojitra" city="Surat"/>
+        </Route>
+        <Route path="/Fetch">
+          <Fetch/>
+        </Route>
+        <Route path="/Update">
+          <Update/>
+        </Route>
+      </Router> */}
+
+      <Router>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">Fech data</Link>
+              </li>
+            </ul>
+          </nav>
+
+          <Route path="/about" component={Update} />
+          <Route exact path="/" component={Fetch} />
+        </div>
+      </Router>
     </>
   );
 }
